@@ -1,15 +1,17 @@
-import React from 'react';
-import Counter from "./Counter/Feedback"
-
-
-
 export const App = () => {
   return (
-    <div>
-     <Counter/>,
-     
+    <div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        textTransform: 'uppercase',
+        color: '#010101',
+      }}
+    >
+      React homework template
     </div>
   );
 };
-
-export default App;
