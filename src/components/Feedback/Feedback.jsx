@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
 import { Statistics } from '../Statistics/Statistics';
 import { SectionTitle } from '../Section/Section';
-import { Notification } from '../Notificaion/Notification.js';
+import { Notification } from '../Notificaion/Notification';
 
 class Feedback extends Component {
   state = {
@@ -39,10 +39,10 @@ class Feedback extends Component {
     } = this;
     const total = countTotalFeedback();
     const feedback = countPositiveFeedbackPercentage();
+
     return (
       <div>
         <SectionTitle title={'Please leave feedback'}>
-          ,
           <FeedbackOptions
             options={Object.keys(state)}
             voteForIncriment={voteForIncriment}
